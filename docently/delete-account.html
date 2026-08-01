@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delete Account &amp; Data — Docently</title>
+  <style>
+    :root {
+      --brand: #5C4DF2; --bg: #f8f8fb; --card: #ffffff;
+      --text: #1a1a2e; --sub: #555577; --border: #e0e0ef;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg); color: var(--text); line-height: 1.75; font-size: 16px; }
+    header { background: var(--brand); color: #fff; padding: 48px 24px 40px; text-align: center; }
+    header h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.5px; }
+    header p { margin-top: 8px; opacity: .88; font-size: .95rem; }
+    .container { max-width: 740px; margin: 0 auto; padding: 40px 24px 80px; }
+    h2 { font-size: 1.15rem; font-weight: 700; color: var(--brand); margin: 32px 0 10px;
+      border-left: 4px solid var(--brand); padding-left: 12px; }
+    p, li { color: var(--sub); margin-bottom: 8px; }
+    ul, ol { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+      padding: 24px 28px; margin: 16px 0; }
+    .card strong { color: var(--text); }
+    .lang-switch { text-align: right; margin-bottom: 8px; }
+    .lang-switch a { color: var(--brand); font-size: .85rem; text-decoration: none; font-weight: 600; }
+    #ko { display: none; }
+    a.link { color: var(--brand); font-weight: 600; }
+    footer { text-align: center; font-size: .8rem; color: #aaa; margin-top: 60px; }
+    footer a { color: var(--sub); }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Docently</h1>
+  <p>Delete Account &amp; Data · 계정 및 데이터 삭제</p>
+</header>
+
+<div class="container">
+  <div class="lang-switch">
+    <a href="#" onclick="toggleLang();return false;" id="langBtn">한국어로 보기</a>
+  </div>
+
+  <!-- ENGLISH -->
+  <div id="en">
+    <p><strong>App:</strong> Docently — A Painting a Day<br>
+    <strong>Developer:</strong> Kim Yewon (김예원)<br>
+    <strong>Contact:</strong> <a class="link" href="mailto:cabotine86biz@gmail.com">cabotine86biz@gmail.com</a></p>
+
+    <h2>Delete your account and data</h2>
+    <p>To request deletion of your Docently account and all associated data, please
+    email us with the following:</p>
+    <div class="card">
+      <p><strong>Send to:</strong> <a class="link" href="mailto:cabotine86biz@gmail.com?subject=Docently%20Account%20Deletion%20Request">cabotine86biz@gmail.com</a></p>
+      <p><strong>Subject:</strong> Docently Account Deletion Request</p>
+      <p><strong>Include in the message:</strong></p>
+      <ol>
+        <li>The Apple ID email (or Google account email) you used to sign in, <em>or</em></li>
+        <li>The anonymous user identifier shown in the app's <em>Settings → About</em> screen (if you never signed in)</li>
+        <li>A brief statement confirming you are the account holder</li>
+      </ol>
+      <p>We will process your request and email you a confirmation within
+      <strong>7 business days</strong>.</p>
+    </div>
+
+    <h2>What is deleted</h2>
+    <ul>
+      <li>Your account record (anonymous user identifier and, if you signed in, the
+      platform-supplied account ID)</li>
+      <li>Your viewing history (which artworks you viewed or completed)</li>
+      <li>Your streak count and any saved artworks or notes tied to your account</li>
+      <li>Any diagnostic entries linked to your identifier</li>
+    </ul>
+
+    <h2>What is kept</h2>
+    <ul>
+      <li><strong>Purchase records:</strong> subscription billing records (kept by
+      Apple/Google, not the operator) are retained by the respective platform store
+      per their policies. The operator does not receive card or payment information.</li>
+      <li><strong>Anonymised aggregate counts:</strong> non-identifying counts such
+      as "how many users viewed this artwork" may be retained in aggregate form
+      after your identifier is removed.</li>
+      <li><strong>Legal/tax records:</strong> where required by applicable law,
+      operator-side records related to a paid subscription may be retained for the
+      minimum period required by law (typically up to 5 years for tax records in
+      the Republic of Korea).</li>
+    </ul>
+
+    <h2>Delete some data without deleting your account</h2>
+    <p>If you would like to delete only a portion of your data — for example, your
+    viewing history or your streak — while keeping your account, please email the
+    same address with a description of what you would like removed. We will confirm
+    within <strong>7 business days</strong>.</p>
+
+    <h2>Data retention after deletion request</h2>
+    <p>Deletion requests are processed within 7 business days. Deleted data is
+    removed from active systems immediately; encrypted backups may retain the data
+    for up to <strong>30 days</strong> before rotation, after which the data cannot
+    be recovered.</p>
+
+    <h2>Uninstalling the app</h2>
+    <p>Uninstalling Docently removes locally cached data (such as your language
+    setting and cached streak) from your device but does <strong>not</strong>
+    automatically delete server-side records. To have server-side records deleted,
+    please use the email procedure above.</p>
+  </div>
+
+  <!-- KOREAN -->
+  <div id="ko">
+    <p><strong>앱:</strong> Docently — 매일 명화 한 점<br>
+    <strong>개발자:</strong> 김예원 (Kim Yewon)<br>
+    <strong>문의:</strong> <a class="link" href="mailto:cabotine86biz@gmail.com">cabotine86biz@gmail.com</a></p>
+
+    <h2>계정 및 데이터 삭제 요청</h2>
+    <p>Docently 계정과 관련 데이터의 삭제를 원하시면 아래 이메일로 요청해
+    주세요.</p>
+    <div class="card">
+      <p><strong>수신:</strong> <a class="link" href="mailto:cabotine86biz@gmail.com?subject=Docently%20%EA%B3%84%EC%A0%95%20%EC%82%AD%EC%A0%9C%20%EC%9A%94%EC%B2%AD">cabotine86biz@gmail.com</a></p>
+      <p><strong>제목:</strong> Docently 계정 삭제 요청</p>
+      <p><strong>본문에 포함해 주세요:</strong></p>
+      <ol>
+        <li>로그인 시 사용한 Apple ID 이메일(또는 Google 계정 이메일), 혹은</li>
+        <li>로그인한 적이 없는 경우, 앱 <em>설정 → 정보</em> 화면에 표시되는
+        익명 사용자 식별자</li>
+        <li>본인이 계정 소유자임을 확인하는 간단한 문구</li>
+      </ol>
+      <p>요청은 접수 후 <strong>영업일 7일 이내</strong>에 처리하고
+      확인 이메일을 보내드립니다.</p>
+    </div>
+
+    <h2>삭제되는 항목</h2>
+    <ul>
+      <li>계정 레코드(익명 사용자 식별자, 로그인한 경우 플랫폼이 제공한 계정 ID)</li>
+      <li>감상 기록(어떤 작품을 보았고 완주했는지)</li>
+      <li>연속 관람일(스트릭) 카운트 및 계정에 저장된 작품·메모</li>
+      <li>식별자에 연결된 진단 로그</li>
+    </ul>
+
+    <h2>유지되는 항목</h2>
+    <ul>
+      <li><strong>결제 기록:</strong> 구독 결제 기록은 Apple 또는 Google이 각
+      스토어 정책에 따라 보관하며, 운영자는 카드·결제 정보를 수신하지 않습니다.</li>
+      <li><strong>익명 집계:</strong> "이 작품을 몇 명이 감상했는가" 같은 개인
+      식별이 불가능한 집계 지표는 사용자 식별자 삭제 이후에도 집계 형태로 유지될
+      수 있습니다.</li>
+      <li><strong>법정 기록:</strong> 관련 법령이 요구하는 경우, 유료 구독과
+      관련된 운영자 측 기록은 법정 최소 기간 동안 보관될 수 있습니다(대한민국의
+      경우 세무 관련 기록은 통상 5년까지).</li>
+    </ul>
+
+    <h2>계정을 남기고 일부 데이터만 삭제</h2>
+    <p>계정을 유지한 채 감상 기록·스트릭 등 일부 데이터만 삭제를 원하시면 같은
+    이메일 주소로 삭제할 항목을 설명해 주세요. 요청은 <strong>영업일 7일
+    이내</strong>에 처리하고 확인 이메일을 보내드립니다.</p>
+
+    <h2>삭제 요청 이후 데이터 보관</h2>
+    <p>삭제 요청은 영업일 7일 이내에 처리됩니다. 삭제된 데이터는 운영 시스템에서
+    즉시 제거되며, 암호화된 백업 매체에는 최대 <strong>30일</strong>까지 잔존한
+    뒤 순환·소거되어 복구가 불가능합니다.</p>
+
+    <h2>앱 삭제(언인스톨)</h2>
+    <p>Docently를 삭제하면 언어 설정, 캐시된 스트릭 등 기기 내 저장 데이터가
+    제거되지만, 서버 측 기록은 <strong>자동으로 삭제되지 않습니다.</strong>
+    서버 측 기록의 삭제를 원하시면 위 이메일 절차를 이용해 주세요.</p>
+  </div>
+
+  <footer>
+    <p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a> ·
+    <a href="support.html">Support</a> · <a href="../index.html">All apps</a></p>
+    <p>Docently · Delete Account &amp; Data · Kim Yewon</p>
+  </footer>
+</div>
+
+<script>
+  function toggleLang() {
+    const en = document.getElementById('en');
+    const ko = document.getElementById('ko');
+    const btn = document.getElementById('langBtn');
+    if (ko.style.display === 'none' || ko.style.display === '') {
+      en.style.display = 'none'; ko.style.display = 'block';
+      btn.textContent = 'View in English';
+    } else {
+      ko.style.display = 'none'; en.style.display = 'block';
+      btn.textContent = '한국어로 보기';
+    }
+  }
+</script>
+</body>
+</html>
