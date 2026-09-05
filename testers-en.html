@@ -29,6 +29,9 @@ h2{font-size:1.12rem;margin:2.2em 0 .6em;color:var(--coral)}
 .urgent h2{color:#fff;margin:.6em 0 .3em}
 .urgent p{color:#fffaf7;margin:.2em 0 .8em}
 .urgent .app{border-color:transparent}
+/* .urgent 는 배경이 coral 이라 기본 .cta(coral 배경)가 묻힌다 — 안에서만 뒤집는다 */
+.urgent .cta{background:#fff;color:var(--coral)}
+.urgent .cta.sub{background:transparent;color:#fff;border-color:#fff}
 .step{display:flex;gap:14px;align-items:flex-start;margin:14px 0}
 .num{flex:0 0 28px;height:28px;border-radius:50%;background:var(--coral);color:#fff;font-weight:700;
      font-size:.9rem;display:flex;align-items:center;justify-content:center;margin-top:2px}
@@ -53,6 +56,17 @@ Nine apps, built by one person, are waiting to launch. Google requires real test
 before that can happen. <b>Every paid feature is unlocked for you the whole time</b>, and at launch
 we send you a free one-year code. No card, no payment details, ever.
 </p>
+
+<div class="urgent">
+  <span class="tag">Chok · Android</span>
+  <h2>Ever go back and check if a reading came true?</h2>
+  <p>We are looking for Android users who want to log tarot readings, horoscopes, or predictions they were given, and later see if they came true.</p>
+  <p><b>Chok does not make predictions or generate horoscopes.</b> It is a record of predictions you were given — write them down, and when the time comes, check if they happened.</p>
+  <p><b>Reward:</b> Open the app on 10 days out of the 14, and you get Chok+ for a year, free. Proof is a screenshot from the app settings showing "Days opened n/14".</p>
+  <p><b>Promise:</b> Android only. We are asking you to stay with us for two weeks. When you send feedback, we will have an update out within two weeks. There is a feedback button in the app settings.</p>
+  <a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLScqFXxjoIIsAOVDMWDdu2m7FxPJoYEFRvew-qb-EMd9ozSGkg/viewform">Sign up</a>
+  <a class="cta sub" href="https://play.google.com/apps/testing/com.chok.chok">Become a tester</a>
+</div>
 
 <h2>Join the group first</h2>
 <div class="step"><div class="num">1</div><div>Join the group below. You are in immediately — no approval queue.</div></div>
