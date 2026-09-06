@@ -49,15 +49,16 @@
   <!-- ENGLISH -->
   <div id="en">
     <p class="badge">✅ Coordinates stay on your iPhone · Leaderboard is opt-in</p>
-    <p><strong>Effective Date:</strong> August 18, 2026<br>
+    <p><strong>Effective Date:</strong> September 7, 2026<br>
     <strong>App:</strong> Outpost — 지구정복<br>
     <strong>Developer:</strong> Cabotine</p>
 
     <h2>1. The short version</h2>
     <div class="card">
       <p>Outpost reads your location to fill in your map. <strong>Your coordinates never leave
-      your iPhone.</strong> The map itself stays on your device, and there is no analytics or
-      tracking. If you delete the app, everything it knew is gone with it.</p>
+      your iPhone.</strong> The map itself stays on your device. There are no third-party
+      analytics SDKs and no tracking; the only thing we count is anonymous, identifier-free
+      progress totals (section 6). If you delete the app, everything it knew is gone with it.</p>
       <p>If — and only if — you switch the leaderboard on, a few <strong>numbers</strong> (how many
       tiles you own, how many strongholds, and so on) are sent to a server under an anonymous
       nickname. <strong>The server never learns which tiles you were on.</strong> It is off by
@@ -106,48 +107,61 @@
     scores, and your crew membership from the server right away. The map on your device is not
     touched.</p>
 
-    <h2>6. What we do not do</h2>
+    <h2>6. Anonymous usage counts</h2>
+    <p>To learn where new players get stuck, the app increases a few counters on our own server —
+    for example &ldquo;someone opened the app for the first time&rdquo; or &ldquo;someone conquered
+    their first tile&rdquo;.</p>
+    <ul>
+      <li><strong>No identifier is attached.</strong> No account, no device id, no advertising id.
+      The server stores only a date, the app version, and which step was reached, so these counts
+      cannot be traced back to you or joined with anything else.</li>
+      <li><strong>No location is involved.</strong> The counters never contain tiles, regions or
+      coordinates.</li>
+      <li>They are used only to improve the app and are not shared with anyone.</li>
+    </ul>
+
+    <h2>7. What we do not do</h2>
     <ul>
       <li>No advertising, no ad identifiers, no third-party analytics SDKs.</li>
       <li>No selling or sharing of personal information.</li>
       <li>No profiling and no automated decisions about you.</li>
     </ul>
 
-    <h2>7. Your control</h2>
+    <h2>8. Your control</h2>
     <p>Location and Motion permissions can be changed or revoked at any time in
     iOS Settings → Privacy &amp; Security. Deleting the app erases all data it created on your
     device. If you used the leaderboard, <strong>Delete My Records</strong> on the leaderboard
     screen erases the server-side records at any time. You can also report a nickname or crew name
     to us from the app, and hide any of them on your own device.</p>
 
-    <h2>8. Children</h2>
+    <h2>9. Children</h2>
     <p>Outpost is not directed to children under 13, and the app does not knowingly collect
     information from them.</p>
 
-    <h2>9. Map data</h2>
+    <h2>10. Map data</h2>
     <p>Maps are provided by Apple Maps. District boundaries come from Korean public data
     (Statistics Korea), and reachable-area estimates are derived from OpenStreetMap data,
     © OpenStreetMap contributors, available under the Open Database License (ODbL).</p>
 
-    <h2>10. Changes</h2>
+    <h2>11. Changes</h2>
     <p>If this policy changes in a way that affects you, the effective date above will be updated
     and the change will be described in the app's release notes.</p>
 
-    <h2>11. Contact</h2>
+    <h2>12. Contact</h2>
     <p>Questions: <a class="link" href="mailto:cabotine86biz@gmail.com">cabotine86biz@gmail.com</a><br>Sole proprietorship · Representative: Yewon Kim</p>
   </div>
 
   <!-- KOREAN -->
   <div id="ko">
     <p class="badge">✅ 좌표는 아이폰 밖으로 나가지 않습니다 · 리더보드는 선택</p>
-    <p><strong>시행일:</strong> 2026년 8월 18일<br>
+    <p><strong>시행일:</strong> 2026년 9월 7일<br>
     <strong>앱:</strong> Outpost — 지구정복<br>
     <strong>개발자:</strong> 카보틴</p>
 
     <h2>1. 요약</h2>
     <div class="card">
       <p>Outpost는 지도를 채우기 위해 위치를 읽습니다. <strong>좌표는 아이폰 밖으로 나가지
-      않습니다.</strong> 지도는 기기 안에 남고, 분석 도구나 추적은 없습니다. 앱을 지우면 앱이
+      않습니다.</strong> 지도는 기기 안에 남습니다. 제3자 분석 도구나 추적은 쓰지 않으며, 저희가 세는 것은 식별자가 없는 익명 진행 집계뿐입니다(6항). 앱을 지우면 앱이
       알던 것도 함께 사라집니다.</p>
       <p>리더보드를 <strong>직접 켠 경우에만</strong> 익명 닉네임과 <strong>숫자 몇 개</strong>(가진
       칸 수, 요새 수 등)가 서버로 올라갑니다. <strong>서버는 사용자가 어느 칸에 있었는지 알 수
@@ -191,37 +205,48 @@
     <strong>「내 기록 삭제」</strong>로 직접 지울 수 있습니다 — 닉네임, 점수, 크루 소속이 서버에서
     바로 삭제됩니다. 기기의 지도와 영토는 그대로 남습니다.</p>
 
-    <h2>6. 하지 않는 것</h2>
+    <h2>6. 익명 사용 집계</h2>
+    <p>새로 시작한 분들이 어디서 막히는지 알기 위해, 앱이 자체 서버의 숫자 몇 개를 1씩 올립니다 —
+    예를 들어 「누군가 앱을 처음 켰다」, 「누군가 첫 칸을 점령했다」 같은 것입니다.</p>
+    <ul>
+      <li><strong>식별자가 붙지 않습니다.</strong> 계정도, 기기 식별자도, 광고 식별자도 없습니다.
+      서버에 남는 것은 날짜와 앱 버전, 그리고 어느 단계까지 왔는지뿐이라, 이 숫자로는 개인을
+      되짚거나 다른 정보와 연결할 수 없습니다.</li>
+      <li><strong>위치는 들어가지 않습니다.</strong> 칸·구역·좌표가 포함되지 않습니다.</li>
+      <li>앱을 고치는 데에만 쓰고 누구와도 공유하지 않습니다.</li>
+    </ul>
+
+    <h2>7. 하지 않는 것</h2>
     <ul>
       <li>광고, 광고 식별자, 제3자 분석 도구를 쓰지 않습니다.</li>
       <li>개인정보를 판매하거나 공유하지 않습니다.</li>
       <li>프로파일링이나 자동화된 결정을 하지 않습니다.</li>
     </ul>
 
-    <h2>7. 이용자의 권리</h2>
+    <h2>8. 이용자의 권리</h2>
     <p>위치·동작 권한은 iOS 설정 → 개인정보 보호 및 보안에서 언제든 변경하거나 철회할 수 있습니다.
     앱을 삭제하면 기기에 만들어진 모든 데이터가 지워집니다. 리더보드를 사용하셨다면 리더보드
     화면의 <strong>「내 기록 삭제」</strong>로 서버 기록을 언제든 직접 지울 수 있습니다. 부적절한
     닉네임이나 크루 이름은 앱에서 신고할 수 있고, 원하지 않는 항목은 내 기기에서 숨길 수 있습니다.</p>
 
-    <h2>8. 아동</h2>
+    <h2>9. 아동</h2>
     <p>이 앱은 만 13세 미만 아동을 대상으로 하지 않으며, 아동의 정보를 알면서 수집하지 않습니다.</p>
 
-    <h2>9. 지도 데이터</h2>
+    <h2>10. 지도 데이터</h2>
     <p>지도는 Apple 지도를 사용합니다. 행정동 경계는 통계청 공공데이터를 사용하며, 도달 가능
     구역 추정에는 OpenStreetMap 데이터를 활용했습니다 (© OpenStreetMap 기여자,
     Open Database License(ODbL)).</p>
 
-    <h2>10. 변경</h2>
+    <h2>11. 변경</h2>
     <p>이용자에게 영향을 주는 변경이 있으면 위 시행일을 갱신하고 앱 릴리스 노트에 내용을 밝힙니다.</p>
 
-    <h2>11. 문의</h2>
+    <h2>12. 문의</h2>
     <p><a class="link" href="mailto:cabotine86biz@gmail.com">cabotine86biz@gmail.com</a><br>상호: 카보틴 · 대표: 김예원</p>
   </div>
 
   <footer>
     <p><a href="terms.html">Terms of Use</a> · <a href="support.html">Support</a> · <a href="../index.html">All apps</a></p>
-    <p>Outpost · Privacy Policy · Effective August 12, 2026</p>
+    <p>Outpost · Privacy Policy · Effective September 7, 2026</p>
   </footer>
 </div>
 
