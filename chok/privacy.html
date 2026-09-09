@@ -48,8 +48,8 @@
 
   <!-- ENGLISH -->
   <div id="en">
-    <p class="badge">✅ No Account · No Tracking</p>
-    <p><strong>Effective Date:</strong> July 18, 2026<br>
+    <p class="badge">✅ Account Optional · No Tracking</p>
+    <p><strong>Effective Date:</strong> September 9, 2026<br>
     <strong>App:</strong> 촉 (Chok) — Prediction Journal<br>
     <strong>Developer:</strong> Cabotine</p>
 
@@ -62,7 +62,7 @@
 
     <h2>2. Information We Do NOT Collect</h2>
     <ul>
-      <li>No sign-up: we do not collect your name, email address, or phone number</li>
+      <li>No sign-up required: without the optional Munyeo account link (section 3-1) we do not collect your name, email address, or phone number</li>
       <li>No advertising identifier (IDFA)</li>
       <li>No usage analytics or crash-reporting SDKs</li>
       <li>No contacts, no location, no health data</li>
@@ -73,6 +73,23 @@
     pattern reports the app generates from them are stored <strong>only on your device</strong>
     using Apple's on-device storage (SwiftData and UserDefaults). The developer has no
     access to them and they are not uploaded to any server run by the developer.</p>
+
+    <h2>3-1. Optional Munyeo Account Link</h2>
+    <p>In Settings you may sign in to a <strong>Munyeo account</strong> (email link, Apple, or Google)
+    to bring the lines you received on the Munyeo website (munyeo.app) into this journal and send
+    your verdicts on those lines back. Signing in is optional; every feature works without it.</p>
+    <ul>
+      <li><strong>Sent to the server:</strong> your account identifier (email address and account ID) and,
+      only for lines that came from Munyeo, your verdict (hit / miss / hold) and its timestamp.</li>
+      <li><strong>Received from the server:</strong> line metadata such as the line text, due date and product
+      name. Munyeo reading bodies are never delivered to the app.</li>
+      <li><strong>Never sent:</strong> predictions you recorded yourself, notes, confidence, statistics, and
+      subscription status.</li>
+      <li><strong>Retention and deletion:</strong> server data is kept while your account exists; signing out
+      stops syncing. Request deletion at support@munyeo.app.</li>
+      <li><strong>Processors:</strong> authentication and storage use Supabase; the server runs on Cloudflare.
+      This data is not used for advertising or tracking and is not sold.</li>
+    </ul>
 
     <h2>4. On-Device Image Reading (OCR)</h2>
     <p>If you choose to add a prediction from a screenshot or photo, the app can read the
@@ -125,7 +142,7 @@
   <!-- KOREAN -->
   <div id="ko">
     <p class="badge">✅ 계정 없음 · 추적 없음</p>
-    <p><strong>시행일:</strong> 2026년 7월 18일<br>
+    <p><strong>시행일:</strong> 2026년 9월 9일<br>
     <strong>앱:</strong> 촉 (Chok) · 예측 저널<br>
     <strong>개발자:</strong> 카보틴</p>
 
@@ -137,7 +154,7 @@
 
     <h2>2. 수집하지 않는 정보</h2>
     <ul>
-      <li>회원가입 없음: 이름·이메일·전화번호를 수집하지 않습니다</li>
+      <li>회원가입 불필요: Munyeo 계정 연동(선택, 3-1항)을 켜지 않는 한 이름·이메일·전화번호를 수집하지 않습니다</li>
       <li>광고 식별자(IDFA)를 사용하지 않습니다</li>
       <li>사용 분석·충돌 보고 SDK를 포함하지 않습니다</li>
       <li>연락처·위치·건강 데이터를 사용하지 않습니다</li>
@@ -148,6 +165,22 @@
     패턴 리포트는 Apple의 기기 내 저장소(SwiftData, UserDefaults)를 사용해 <strong>이용자
     기기에만</strong> 저장됩니다. 운영자는 이 데이터에 접근할 수 없으며, 운영자가 운영하는
     어떤 서버로도 전송되지 않습니다.</p>
+
+    <h2>3-1. Munyeo 계정 연동(선택)</h2>
+    <p>설정에서 <strong>Munyeo 계정</strong>에 로그인하면(이메일 링크, Apple, Google 중 택일) 운세 웹사이트
+    Munyeo(munyeo.app)에서 받은 기록 문장을 이 앱의 원장으로 가져오고, 그 문장에 대한 판정을 되돌려 보낼 수
+    있습니다. 로그인은 선택이며, 로그인하지 않아도 앱의 모든 기능은 그대로입니다.</p>
+    <ul>
+      <li><strong>서버로 보내는 정보:</strong> 로그인 계정 식별자(이메일 주소·계정 ID), 그리고 Munyeo에서 가져온
+      문장에 한해 이용자의 판정 결과(맞음/틀림/보류)와 판정 시각.</li>
+      <li><strong>서버에서 받는 정보:</strong> 기록 문장·기한·상품명 등 메타 정보. Munyeo 리딩 본문은 앱으로
+      전송되지 않습니다.</li>
+      <li><strong>보내지 않는 정보:</strong> 앱에서 직접 기록한 예측, 메모, 확신도, 통계, 구독 상태.</li>
+      <li><strong>보관·삭제:</strong> 서버 데이터는 계정이 유지되는 동안 보관되며, 로그아웃하면 동기화가 멈춥니다.
+      삭제는 support@munyeo.app 으로 요청할 수 있습니다.</li>
+      <li><strong>처리 위탁:</strong> 인증·데이터 저장은 Supabase, 서버 실행은 Cloudflare를 이용합니다. 광고·추적
+      목적으로 쓰이거나 제3자에게 판매되지 않습니다.</li>
+    </ul>
 
     <h2>4. 기기 내 이미지 인식(OCR)</h2>
     <p>스크린샷이나 사진에서 예측을 추가하기로 선택하면, 앱은 입력을 돕기 위해 해당
