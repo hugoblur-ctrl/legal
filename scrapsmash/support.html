@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support — SCRAP SMASH</title>
+  <style>
+    :root {
+      --brand: #B8501C; --bg: #f8f8fb; --card: #ffffff;
+      --text: #1a1a2e; --sub: #555577; --border: #e0e0ef;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg); color: var(--text); line-height: 1.75; font-size: 16px; }
+    header { background: var(--brand); color: #fff; padding: 48px 24px 40px; text-align: center; }
+    header h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.5px; }
+    header p { margin-top: 8px; opacity: .88; font-size: .95rem; }
+    .container { max-width: 740px; margin: 0 auto; padding: 40px 24px 80px; }
+    .badge { display: inline-block; background: #e8f5e9; color: #2e7d32;
+      border: 1px solid #a5d6a7; border-radius: 999px; padding: 6px 18px;
+      font-size: .875rem; font-weight: 600; margin-bottom: 32px; }
+    h2 { font-size: 1.15rem; font-weight: 700; color: var(--brand); margin: 36px 0 10px;
+      border-left: 4px solid var(--brand); padding-left: 12px; }
+    p, li { color: var(--sub); margin-bottom: 8px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+      padding: 24px 28px; margin: 12px 0; }
+    .card strong { color: var(--text); }
+    .lang-switch { text-align: right; margin-bottom: 8px; }
+    .lang-switch a { color: var(--brand); font-size: .85rem; text-decoration: none; font-weight: 600; }
+    #ko { display: none; }
+    a.link { color: var(--brand); }
+    footer { text-align: center; font-size: .8rem; color: #aaa; margin-top: 60px; }
+    footer a { color: var(--sub); }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>SCRAP SMASH</h1>
+  <p>Support · 고객 지원</p>
+</header>
+
+<div class="container">
+  <div class="lang-switch">
+    <a href="#" onclick="toggleLang();return false;" id="langBtn">한국어로 보기</a>
+  </div>
+
+  <!-- ENGLISH -->
+  <div id="en">
+    <p class="badge">Offline game · Contact by email</p>
+    <p><strong>App:</strong> SCRAP SMASH · <strong>Developer:</strong> Cabotine</p>
+
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email <a class="link" href="mailto:cabotine86biz@gmail.com?subject=SCRAP%20SMASH">cabotine86biz@gmail.com</a>
+      with the subject “SCRAP SMASH”. Please include your device model and OS version. We usually reply within 3 business days.</p>
+    </div>
+
+    <h2>Common questions</h2>
+    <ul>
+      <li><strong>Where is my progress saved?</strong> On your device only. Deleting the app deletes your progress.</li>
+      <li><strong>Does it need an internet connection?</strong> No. The game runs offline.</li>
+      <li><strong>I am a tester — how do I report a bug?</strong> Send the email above with what happened, the floor number and,
+      if possible, a screenshot or screen recording.</li>
+    </ul>
+  </div>
+
+  <!-- 한국어 -->
+  <div id="ko">
+    <p class="badge">오프라인 게임 · 메일 문의</p>
+    <p><strong>앱:</strong> SCRAP SMASH · <strong>개발자:</strong> 카보틴</p>
+
+    <h2>문의</h2>
+    <div class="card">
+      <p><a class="link" href="mailto:cabotine86biz@gmail.com?subject=SCRAP%20SMASH">cabotine86biz@gmail.com</a> 으로 제목에 「SCRAP SMASH」를 넣어 보내 주세요.
+      기기 모델과 OS 버전을 함께 적어 주시면 빨리 확인할 수 있습니다. 보통 영업일 3일 안에 답합니다.</p>
+    </div>
+
+    <h2>자주 묻는 질문</h2>
+    <ul>
+      <li><strong>진행 상황은 어디에 저장되나요?</strong> 기기에만 저장됩니다. 앱을 지우면 함께 지워집니다.</li>
+      <li><strong>인터넷이 필요한가요?</strong> 아니요. 오프라인으로 동작합니다.</li>
+      <li><strong>테스터인데 버그는 어떻게 알리나요?</strong> 위 메일로 무슨 일이 있었는지, 몇 층이었는지, 가능하면 스크린샷이나 화면 녹화를 함께 보내 주세요.</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p><a href="privacy.html">Privacy Policy</a> · <a href="support.html">Support</a> · <a href="../index.html">All apps</a></p>
+    <p>SCRAP SMASH · Support</p>
+  </footer>
+</div>
+
+<script>
+  function toggleLang() {
+    const en = document.getElementById('en');
+    const ko = document.getElementById('ko');
+    const btn = document.getElementById('langBtn');
+    if (ko.style.display === 'none' || ko.style.display === '') {
+      en.style.display = 'none'; ko.style.display = 'block';
+      btn.textContent = 'View in English';
+    } else {
+      ko.style.display = 'none'; en.style.display = 'block';
+      btn.textContent = '한국어로 보기';
+    }
+  }
+</script>
+</body>
+</html>
