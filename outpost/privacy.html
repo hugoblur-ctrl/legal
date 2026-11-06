@@ -48,15 +48,16 @@
 
   <!-- ENGLISH -->
   <div id="en">
-    <p class="badge">✅ Coordinates stay on your iPhone · Leaderboard is opt-in</p>
-    <p><strong>Effective Date:</strong> November 1, 2026<br>
+    <p class="badge">✅ Your map stays on your iPhone · Leaderboard is opt-in</p>
+    <p><strong>Effective Date:</strong> November 6, 2026<br>
     <strong>App:</strong> Outpost — 지구정복<br>
     <strong>Developer:</strong> Cabotine</p>
 
     <h2>1. The short version</h2>
     <div class="card">
-      <p>Outpost reads your location to fill in your map. <strong>Your coordinates never leave
-      your iPhone.</strong> The map itself stays on your device. There are no third-party
+      <p>Outpost reads your location to fill in your map. <strong>Your map and your movement history stay on your iPhone.</strong> The only
+      location-related data that leaves it is the centre point of a map tile, sent to Apple Maps
+      to look up a place name (section 2). There are no third-party
       analytics SDKs and no tracking; the only things we collect are anonymous, identifier-free
       progress totals and crash reports (section 6). If you delete the app, everything it knew is gone with it.</p>
       <p>If — and only if — you switch the leaderboard on, a few <strong>numbers</strong> (how many
@@ -69,7 +70,12 @@
     <p>The app uses your location to decide which map tiles you have visited or stayed in.</p>
     <ul>
       <li><strong>Stored on your device only.</strong> Coordinates are converted to map tile
-      identifiers and kept in the app's own storage. They are never uploaded.</li>
+      identifiers and kept in the app's own storage. Your tiles and your route are not uploaded.</li>
+      <li><strong>Place lookups go to Apple, not to us.</strong> To show the name of a place and to
+      keep daily expedition targets off the sea, rivers and lakes, the app sends the centre point
+      of a map tile (an area about 300&nbsp;m across, not your live position) to Apple Maps, which
+      returns a place name. The developer does not receive this request. Apple handles it under
+      <a class="link" href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</li>
       <li><strong>Background use is opt-in.</strong> Claiming while the app is closed only
       happens if you turn that switch on yourself. You can turn it off at any time.</li>
       <li><strong>No history of your movements is transmitted.</strong> The developer cannot see
@@ -151,7 +157,7 @@
     information from them.</p>
 
     <h2>10. Map data</h2>
-    <p>Maps are provided by Apple Maps. District boundaries come from Korean public data
+    <p>Maps and place names are provided by Apple Maps. District boundaries come from Korean public data
     (Statistics Korea), and reachable-area estimates are derived from OpenStreetMap data,
     © OpenStreetMap contributors, available under the Open Database License (ODbL).</p>
 
@@ -165,15 +171,15 @@
 
   <!-- KOREAN -->
   <div id="ko">
-    <p class="badge">✅ 좌표는 아이폰 밖으로 나가지 않습니다 · 리더보드는 선택</p>
-    <p><strong>시행일:</strong> 2026년 11월 1일<br>
+    <p class="badge">✅ 지도는 아이폰 안에 남습니다 · 리더보드는 선택</p>
+    <p><strong>시행일:</strong> 2026년 11월 6일<br>
     <strong>앱:</strong> Outpost — 지구정복<br>
     <strong>개발자:</strong> 카보틴</p>
 
     <h2>1. 요약</h2>
     <div class="card">
-      <p>Outpost는 지도를 채우기 위해 위치를 읽습니다. <strong>좌표는 아이폰 밖으로 나가지
-      않습니다.</strong> 지도는 기기 안에 남습니다. 제3자 분석 도구나 추적은 쓰지 않으며, 저희가 받는 것은 식별자가 없는 익명 진행 집계와 오류(크래시) 보고뿐입니다(6항). 앱을 지우면 앱이
+      <p>Outpost는 지도를 채우기 위해 위치를 읽습니다. <strong>지도와 이동 기록은 아이폰 안에 남습니다.</strong>
+      위치와 관련해 기기 밖으로 나가는 것은 지명을 찾기 위해 Apple 지도에 보내는 지도 칸의 중심점뿐입니다(2항). 제3자 분석 도구나 추적은 쓰지 않으며, 저희가 받는 것은 식별자가 없는 익명 진행 집계와 오류(크래시) 보고뿐입니다(6항). 앱을 지우면 앱이
       알던 것도 함께 사라집니다.</p>
       <p>리더보드를 <strong>직접 켠 경우에만</strong> 익명 닉네임과 <strong>숫자 몇 개</strong>(가진
       칸 수, 요새 수 등)가 서버로 올라갑니다. <strong>서버는 사용자가 어느 칸에 있었는지 알 수
@@ -184,7 +190,11 @@
     <p>어느 칸을 지나갔고 어디에 머물렀는지 판단하는 데 위치를 씁니다.</p>
     <ul>
       <li><strong>기기 안에만 저장합니다.</strong> 좌표는 지도 칸 식별자로 바뀌어 앱 저장소에
-      남고, 어디로도 전송되지 않습니다.</li>
+      남습니다. 가진 칸과 이동 경로는 업로드하지 않습니다.</li>
+      <li><strong>지명 조회는 저희가 아니라 Apple로 갑니다.</strong> 장소 이름을 보여 주고 오늘의
+      원정 목표가 바다·강·호수에 찍히지 않게 하려고, 지도 칸의 중심점(폭 약 300m 구역의 가운데이며
+      실시간 위치가 아님)을 Apple 지도에 보내 지명을 받아 옵니다. 개발자는 이 요청을 받지 않으며,
+      Apple은 <a class="link" href="https://www.apple.com/kr/legal/privacy/">Apple 개인정보 처리방침</a>에 따라 처리합니다.</li>
       <li><strong>백그라운드 사용은 선택입니다.</strong> 앱을 닫은 동안의 자동 정복은 사용자가
       직접 켤 때만 동작하며, 언제든 끌 수 있습니다.</li>
       <li><strong>이동 기록은 전송되지 않습니다.</strong> 개발자에게 도달하지 않으므로 개발자는
@@ -254,7 +264,7 @@
     <p>이 앱은 만 13세 미만 아동을 대상으로 하지 않으며, 아동의 정보를 알면서 수집하지 않습니다.</p>
 
     <h2>10. 지도 데이터</h2>
-    <p>지도는 Apple 지도를 사용합니다. 행정동 경계는 통계청 공공데이터를 사용하며, 도달 가능
+    <p>지도와 지명은 Apple 지도를 사용합니다. 행정동 경계는 통계청 공공데이터를 사용하며, 도달 가능
     구역 추정에는 OpenStreetMap 데이터를 활용했습니다 (© OpenStreetMap 기여자,
     Open Database License(ODbL)).</p>
 
@@ -267,7 +277,7 @@
 
   <footer>
     <p><a href="terms.html">Terms of Use</a> · <a href="support.html">Support</a> · <a href="../index.html">All apps</a></p>
-    <p>Outpost · Privacy Policy · Effective November 1, 2026</p>
+    <p>Outpost · Privacy Policy · Effective November 6, 2026</p>
   </footer>
 </div>
 
